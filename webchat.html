@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+
+
+h2{
+text-align: center;
+}
+
+div{
+text-align: center;
+font-size: 40px;
+}
+
+
+.button1 {
+ position: absolute;
+ margin: 10px;
+ top: 40%;
+ left:540px;
+ 
+}
+
+.left{
+border: none ;
+color: white;
+background-color: gray;
+height: 50px;
+width: 50px;
+}
+
+.button2 {
+position: absolute;
+margin: 10%;
+top: 21%;
+right: 460px; 
+
+}
+
+.right{
+border: none ;
+color: white;
+background-color:gray;
+height: 50px;
+width: 50px;  
+}
+
+.button3 {
+position: absolute;
+margin: 10%;
+left: 490px; 
+top: 60px;
+
+}
+
+.forwards{
+border: none ;
+color: white;
+background-color: rgb(186, 205, 240);
+height: 50px;
+width: 75px;  
+}
+
+.button4 {
+position: absolute;
+margin: 10%; 
+left: 490px;
+top: 200px;
+
+}
+
+.backwards{
+border: none ;
+color: white;
+background-color: rgb(186, 205, 240);
+height: 50px;
+width: 75px;  
+
+}
+
+.button5 {
+position: absolute;
+margin: 10%; 
+left: 500px;
+top: 130px;
+
+}
+
+
+.stop{
+border: none ;
+color: black;
+background-color:burlywood;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+
+</style>
+</head>
+
+<body>
+<script>
+ 
+  window.watsonAssistantChatOptions = {
+      integrationID: "16332eec-648c-42dd-8a7f-b1d7b2f991cb", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "ad7d4498-b650-4a07-be94-c48a457796fc", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+
+</script>
+
+
+
+
+
+
+    <h2>Initial Control Panel</h2>
+    
+    <img src="https://image.freepik.com/vecteurs-libre/robot-souriant-mignon-chat-bot-signes-communication-illustration-personnage-dessin-anime-plat-moderne-isole-blanc-bulle-parlee-service-support-vocal-communication-bot-discussion_92289-518.jpg"
+    alt="robot" style="float: left;" width="400"/>
+    <div>
+
+<div class="button1" >
+<button class="left">
+    Left
+</button>
+</div>
+
+
+<div class="button2" >
+<button class="right">
+    Right
+</button>
+</div>
+
+<div class="button3">
+<button class="forwards">
+    Forwards
+</button>
+</div>
+
+<div class="button4">
+<button class="backwards">
+    Backwards
+</button>
+</div>
+
+<div class="button5">
+<button class="stop">
+    Stop
+</button>
+</div>
+
+</div>
+
+
+</body>
+
+
+
+
+</html>
